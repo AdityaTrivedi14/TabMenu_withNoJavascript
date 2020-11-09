@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #00adb5;
+  color: #eeeeee;
+  overflow: hidden;
+}
+.hi{
+  color: #E8552A;
+}
+.ci{
+  color: #0274BA;
+}
+.ji{
+  color: #DCB927;
+}
+.container{
+  width: 70%;
+  margin: 150px 15%;
+}
+input[type="radio"],section > div{
+  display: none;
+}
+label{
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 20px 25px;
+  background: #393e46;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+section{
+  margin-top: 19px;
+}
+section div{
+  background: #222831;
+  padding: 30px;
+}
+section div h1{
+  font-size: 35px;
+}
+section div p{
+  margin-top: 25px;
+  font-size: 22px;
+  font-family: arial;
+  letter-spacing: 0.03em;
+}
+#tab1:checked ~ section .html,
+#tab2:checked ~ section .css,
+#tab3:checked ~ section .js{
+  display: block;
+}
+input:checked + label{
+  background: #222831;
+}
